@@ -12,4 +12,9 @@ class PostController extends Controller
     public function create(){
         return "Form Post page";
     }
+    public function show($post){
+        return  view('posts.show',[
+            'post'=> $post
+        ]);
+    }
 }
